@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKS Janikowo - Klub Sportowy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="loading">
+    <div class="loaded">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="content">
+        <nav class="header_menu">
+            <img src="img/logo.png" alt="">
+            <a href="index.html" class="logo"></a>
+            <div class="navbar">
+                <a href="index.html">Strona Główna</a>
+                <a href="#">Tabela</a>
+                <a href="#">Zawodnicy</a>
+                <a href="#">Statystyki</a>
+            </div>
+        </nav>
+        <main>
+            <h1 class="pierwsze">OSTATNI MECZ</h1>
+            <div class="container">
+                <div class="match">
+                    <div class="match-header">
+                        <div class="match-status">Koniec Meczu</div>
+                        <div class="match-tournament">Mecz Towarzyski</div>
+                    </div>
+                    <div class="match-content">
+                        <div class="column">
+                            <div class="team team--home">
+                                <div class="team-logo">
+                                    <img src="img/Elana.png" alt="">
+                                </div>
+                                <h2 class="team-name">Elana Toruń</h2>
+                            </div>
+                        </div>
+                        <div class="column-match-details">
+                            <div class="match-details">
+                                <div class="match-date">
+                                    10 Lutego o <strong>12:00</strong>
+                                </div>
+                                <div class="match-score">
+                                    <span class="match-score-number match-score-number--leading">10</span>
+                                    <span class="match-score-divider">:</span>
+                                    <span class="match-score-number">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="team team--away">
+                                <div class="team-logo">
+                                    <img src="img/logo.png" alt="">
+                                </div>
+                                <h2 class="team-name">MKS Janikowo</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1>CZAS DO NASTĘPNEGO MECZU</h1>
+            <div class="timermain">
+                <div id="time">
+                    <div class="circle" style="--clr:#000">
+                        <div class="dots day_dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70" id="dd"></circle>
+                        </svg>
+                        <div id="days">00<span>Dni</span></div>
+                    </div>
+                    <div class="circle" style="--clr:#d72641">
+                        <div class="dots hr_dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70" id="hh"></circle>
+                        </svg>
+                        <div id="hours">00<span>Godzin</span></div>
+                    </div>
+                    <div class="circle" style="--clr:#000">
+                        <div class="dots min_dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70" id="mm"></circle>
+                        </svg>
+                        <div id="minutes">00<span>Minut</span></div>
+                    </div>
+                    <div class="circle" style="--clr:#d72641">
+                        <div class="dots sec_dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70" id="ss"></circle>
+                        </svg>
+                        <div id="seconds">00<span>Sekund</span></div>
+                    </div>
+                    <h1 class="timertext">MECZ ROZPOCZĘTY!</h1>
+                </div>
+            </div>
+            <h1>NASTĘPNY MECZ</h1>
+            <div class="container">
+                <div class="match">
+                    <div class="match-header">
+                        <div class="match-tournament">Mecz Towarzyski</div>
+                    </div>
+                    <div class="match-content">
+                        <div class="column">
+                            <div class="team team--home">
+                                <div class="team-logo">
+                                    <img src="img/zawisza.png" alt="">
+                                </div>
+                                <h2 class="team-name">Zawisza Bydgoszcz</h2>
+                            </div>
+                        </div>
+                        <div class="column-match-details">
+                            <div class="match-details">
+                                <div class="match-date">
+                                    23 Lutego o <strong>17:00</strong>
+                                </div>
+                                <div class="match-score">
+                                    <span class="match-score-number">?</span>
+                                    <span class="match-score-divider">:</span>
+                                    <span class="match-score-number">?</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="team team--away">
+                                <div class="team-logo">
+                                    <img src="img/logo.png" alt="">
+                                </div>
+                                <h2 class="team-name">MKS Janikowo</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1>PLAN TYGODNIOWY - TRENINGI</h1>
+            <div class="tabelamain">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dzień</th>
+                            <th>Godzina</th>
+                            <th>Trening</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Poniedziałek</td>
+                            <td>12:30 - 14:30</td>
+                            <td>Orlik</td>
+                        </tr>
+                        <tr>
+                            <td>Wtorek</td>
+                            <td>12:30 - 14:30</td>
+                            <td>Orlik</td>
+                        </tr>
+                        <tr class="rest-day">
+                            <td>Środa</td>
+                            <td>-</td>
+                            <td>WOLNE</td>
+                        </tr>
+                        <tr>
+                            <td>Czwartek</td>
+                            <td>16:00 - 17:000</td>
+                            <td>Hala (Trening Bramkarski)</td>
+                        </tr>
+                        <tr>
+                            <td>Piątek</td>
+                            <td>17:00 - 18:30</td>
+                            <td>Mecz</td>
+                        </tr>
+                        <tr class="rest-day">
+                            <td>Sobota</td>
+                            <td>-</td>
+                            <td>WOLNE</td>
+                        </tr>
+                        <tr class="rest-day">
+                            <td>Niedziela</td>
+                            <td>-</td>
+                            <td>WOLNE</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h1>NASI SPONSORZY</h1>
+            <div class="logos">
+                <div class="logos-slide">
+                    <img src="img/ciech.jpg" alt="CiechSoda">
+                    <img src="img/Broster.png" alt="Broster">
+                    <img src="img/eko.png" alt="Ekoserwis">
+                    <img src="img/montostal.jpg" alt="Montostal">
+                    <img src="img/Elektrorem.png" alt="Elektrorem">
+                    <img src="img/transpol.png" alt="Transpol">
+                    <img src="img/indekor.png" alt="Indekor">
+                    <img src="img/SGB.png" alt="SGB Bank Piastowski">
+                    <img src="img/plotino.jpg" alt="Plotino & Grafit">
+                    <img src="img/zina.jpg" alt="Zina">
+                    <img src="img/kapi.jpg" alt="Kapi Meble">
+                    <img src="img/Ambrozja.png" alt="Ambrozja">
+                    <img src="img/Eurowind.png" alt="Eurowind Energy & Windbud">
+                    <img src="img/BPM.jpg" alt="Plotino & BPM Logistic">
+                    <img src="img/Wod.jpg" alt="Wod-Kan-Bud">
+                </div>
+                <div class="logos-slide">
+                    <img src="img/ciech.jpg" alt="CiechSoda">
+                    <img src="img/Broster.png" alt="Broster">
+                    <img src="img/eko.png" alt="Ekoserwis">
+                    <img src="img/montostal.jpg" alt="Montostal">
+                    <img src="img/Elektrorem.png" alt="Elektrorem">
+                    <img src="img/transpol.png" alt="Transpol">
+                    <img src="img/indekor.png" alt="Indekor">
+                    <img src="img/SGB.png" alt="SGB Bank Piastowski">
+                    <img src="img/plotino.jpg" alt="Plotino & Grafit">
+                    <img src="img/zina.jpg" alt="Zina">
+                    <img src="img/kapi.jpg" alt="Kapi Meble">
+                    <img src="img/Ambrozja.png" alt="Ambrozja">
+                    <img src="img/Eurowind.png" alt="Eurowind Energy & Windbud">
+                    <img src="img/BPM.jpg" alt="Plotino & BPM Logistic">
+                    <img src="img/Wod.jpg" alt="Wod-Kan-Bud">
+                </div>
+            </div>
+        </main>
+        <div id="progress">
+            <i class="fa-solid fa-arrow-up" id="progress-value"></i>
+        </div>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/ad2f28d23c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</body>
+</html>
